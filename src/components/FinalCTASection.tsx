@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, TrendingUp, Zap } from 'lucide-react';
+import BookingButton from './bookingButton';
 
 const FinalCTASection = () => {
   return (
@@ -64,14 +65,15 @@ const FinalCTASection = () => {
 
           {/* CTA Button */}
           <div className="mb-8">
-            <Button
+            <BookingButton
               variant="outline"
+
               size="lg"
               className="text-xl px-12 py-8 h-auto shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 !text-white-primary"
             >
               🎯 Talk to our team!
               <ArrowRight className="ml-3 h-6 w-6" />
-            </Button>
+            </BookingButton>
           </div>
 
           {/* Social Proof */}
