@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
 
               <div className="text-center md:text-right">
-                <p>&copy; 2024 Bamble AI Training. All rights reserved.</p>
+                <p>&copy; 2026 Bamble AI Training. All rights reserved.</p>
               </div>
             </div>
           </div>
