@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CheckCircle, Clock, BookOpen, Shield, Bot, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import BookingButton from './bookingButton';
 
 const WhatYouGetSection = () => {
   const included = [
@@ -146,13 +147,13 @@ const WhatYouGetSection = () => {
                 Join 150+ professionals who've already unlocked the power of AI
                 in their daily work.
               </p>
-              <Button
+              <BookingButton
                 variant="default"
                 size="lg"
-                className="text-lg px-8 py-6 h-auto"
+                 className="text-xl px-12 py-8 h-auto shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 !text-white !bg-black hover:!bg-neutral-800"
               >
-                Talk to our team!
-              </Button>
+                <span className='text-white-primary'>Talk to our team!</span>
+              </BookingButton>
             </div>
           </div>
         </div>

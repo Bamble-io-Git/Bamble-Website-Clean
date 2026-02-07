@@ -32,14 +32,14 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center justify-center gap-4 mb-12">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/bamble"
                 className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-accent/20 transition-colors group"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5 group-hover:text-accent transition-colors" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/bamble.io"
                 className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-accent/20 transition-colors group"
                 aria-label="Instagram"
               >
@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
 
               <div className="text-center md:text-right">
-                <p>&copy; 2024 Bamble AI Training. All rights reserved.</p>
+                <p>&copy; 2026 Bamble AI Training. All rights reserved.</p>
               </div>
             </div>
           </div>

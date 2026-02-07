@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import Script from 'next/script';
 import GTag from '@/scripts/google-tag';
 import './globals.css';
 import { montserrat, notoSans, ubuntu } from './theme/fonts';
@@ -15,6 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link href='https://assets.calendly.com/assets/external/widget.css'
+        rel='stylesheet'
+        />
+      </head>
+
       <GTag />
       {process.env.NODE_ENV !== 'development' && <PosthogScript />}
 
@@ -24,6 +31,8 @@ export default function RootLayout({
       >
         <ToastContainer position="top-right" />
         <PHProvider>{children}</PHProvider>
+
+        <Script src='https://assets.calendly.com/assets/external/widget.js"' strategy='lazyOnload'/>
       </body>
 
       {<GoogleAnalytics gaId="G-VCRDL8EWYD" />}
