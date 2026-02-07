@@ -55,7 +55,7 @@ const HeroSection = () => {
             <div className="pt-4">
               <BookingButton
                 size="lg"
-                className="text-lg px-8 py-6 h-auto !bg-blue-500 !text-white-primary"
+                className="text-lg px-8 py-6 h-auto shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 !bg-blue-500 !text-white-primary"
               >
                 Talk to our team!
                 <ArrowRight className="ml-2 h-5 w-5" />
