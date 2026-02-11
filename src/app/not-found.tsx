@@ -1,5 +1,13 @@
+"use client"
+
+import dynamic from "next/dynamic";
 import LinkComponent from "@/components/elements/link";
-import LottieControl from "@/components/elements/not-found-animation";
+
+const LottieControl = dynamic(
+  () => import("@/components/elements/not-found-animation"),
+  {ssr: false}
+)
+
 
 function NotFoundPage() {
   return (
